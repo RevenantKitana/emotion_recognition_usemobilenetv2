@@ -1,15 +1,19 @@
+﻿# Nhập thư viện tkinter để tạo giao diện người dùng đồ họa
 import tkinter as tk
 
-# Creating the main window
+# Tạo cửa sổ chính của ứng dụng
 window = tk.Tk()
-window.title("Emotion Recognition")
+# Đặt tiêu đề cho cửa sổ
+window.title("Nhận diện cảm xúc")
 
-# Add labels and buttons to the interface
-label = tk.Label(window, text="Emotion Recognition App")
-label.pack()
+# Thêm nhãn và nút vào giao diện
+# Tạo một nhãn với nội dung "Emotion Recognition App" và đặt nó vào cửa sổ
+label = tk.Label(window, text="Ứng dụng Nhận diện Cảm xúc")
+label.pack()  # Sắp xếp nhãn tự động trong cửa sổ
 
-button = tk.Button(window, text="Start", command=None)
-button.pack()
+# Tạo một nút với nội dung "Start", hiện chưa gắn hàm xử lý (command=None)
+button = tk.Button(window, text="Bắt đầu", command=None)
+button.pack()  # Sắp xếp nút tự động trong cửa sổ
 
-# Start the GUI loop
+# Bắt đầu vòng lặp sự kiện chính để chạy giao diện
 window.mainloop()
